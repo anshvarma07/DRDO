@@ -36,7 +36,7 @@ const CourseDescription = ({ user }) => {
           token,
         },
       }
-    );
+    ).catch(err=>{console.log("Checkout error")});
 
     const options = {
       key: "rzp_test_yOMeMyaj2wlvTt", // Enter the Key ID generated from the Dashboard
@@ -63,7 +63,7 @@ const CourseDescription = ({ user }) => {
                 token,
               },
             }
-          );
+          ).catch(err=>{console.log("Verification error")});
 
           await fetchUser();
           await fetchCourses();

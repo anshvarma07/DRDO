@@ -66,9 +66,7 @@ export const getMyCourses = TryCatch(async (req, res) => {
 
 export const checkout = TryCatch(async (req, res) => {
   const user = await User.findById(req.user._id);
-
   const course = await Courses.findById(req.params.id);
-
   if (user.subscription.includes(course._id)) {
     return res.status(400).json({
       message: "You already have this course",
@@ -79,8 +77,15 @@ export const checkout = TryCatch(async (req, res) => {
     amount: Number(course.price * 100),
     currency: "INR",
   };
-
-  const order = await instance.orders.create(options);
+  console.log("order")
+  console.log("order")
+  try {
+    const order = await instance.orders.create(options);
+    console.log("Order created:", order);
+  } catch (error) {
+    console.error("Order creation failed:", error);
+  }
+  console.log(order);
 
   res.status(201).json({
     order,
