@@ -81,16 +81,14 @@ export const checkout = TryCatch(async (req, res) => {
   console.log("order")
   try {
     const order = await instance.orders.create(options);
+    res.status(201).json({
+      order,
+      course,
+    });
     console.log("Order created:", order);
   } catch (error) {
     console.error("Order creation failed:", error);
   }
-  console.log(order);
-
-  res.status(201).json({
-    order,
-    course,
-  });
 });
 
 export const paymentVerification = TryCatch(async (req, res) => {
