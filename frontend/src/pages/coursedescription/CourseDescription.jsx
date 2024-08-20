@@ -44,7 +44,7 @@ const CourseDescription = ({ user }) => {
           key: "rzp_test_DWMqmVUZmnhIWh", // Enter the Key ID generated from the Dashboard
           amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
           currency: "INR",
-          name: "E learning", // your business name
+          name: "DRDO", // your business name
           description: "Learn with us",
           order_id: order.id, // Order ID obtained from the response
   
@@ -81,7 +81,7 @@ const CourseDescription = ({ user }) => {
             }
           },
           theme: {
-            color: "#8a4baf",
+            color: "#204282",
           },
         };
   

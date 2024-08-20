@@ -1,22 +1,42 @@
-.about {
-  padding: 80px 0;
-  text-align: center;
-  min-height: 55vh;
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
 
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
+  h2 {
+    font-size: 32px;
+    color: #204282;
+    margin-bottom: 20px;
+  }
 
-    h2 {
-      font-size: 32px;
-      color: #8a4baf;
-      margin-bottom: 20px;
-    }
+  p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
 
-    p {
-      font-size: 16px;
-      color: #333;
-      line-height: 1.6;
-    }
+  /* Key Achievements Section */
+  ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  li {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Light background for each item */
+    border-left: 4px solid #204282; /* Colored left border for emphasis */
+    border-radius: 8px; /* Rounded corners for a modern look */
+  }
+
+  li strong {
+    color: #0056b3; /* Different color for strong emphasis */
+    font-weight: bold;
   }
 }

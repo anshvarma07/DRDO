@@ -10,18 +10,20 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <p>
-          &copy; 2024 Your E-Learning Platform. All rights reserved. <br /> Made
-          with ❤️ <a href="">Ansh Varma</a>
-        </p>
+        <div className="footer-info">
+          <h2>Defence Research and Development Organisation</h2>
+          <p>
+            &copy; 2024 DRDO. All rights reserved. | Developed by <a href="https://www.linkedin.com/in/ansh-varma/" target="_blank" rel="noopener noreferrer">Ansh Varma</a>
+          </p>
+        </div>
         <div className="social-links">
-          <a href="">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <AiFillFacebook />
           </a>
-          <a href="">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <AiFillTwitterSquare />
           </a>
-          <a href="">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <AiFillInstagram />
           </a>
         </div>
